@@ -1,0 +1,66 @@
+/* 
+Creator Name: Susana Ortega
+Date Created: 12/28/2019
+Date Last Modified: 
+*/
+
+header{
+	text-align: center; 
+	font-family: 'Tangerine', serif;
+	font-size: 50px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+.carousel-inner{
+	background-color: #5b7d87; 
+}
+.carousel-inner h2{
+	color: white;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: white;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: white;
+}
+
+footer{
+	text-align: center; 
+	border-top: thin #5b7d87 solid; 
+	padding: 0px 0px 0px 0px; 
+	margin-top: 40px; 
+}
+nav{
+	border-top: thin #5b7d87 solid; 
+	border-bottom: thin #5b7d87 solid; 
+	padding-top: 12px; 
+	padding-bottom: 12px;
+	padding-left: 20px;
+	text-align: center;
+}
+nav .btn{
+	background-color: #5b7d87;
+	color: #fef9ff;
+	border-radius: 16px; 
+}
+nav .btn:hover{
+	font-weight: bold; 
+}
+a:active{
+	text-decoration: none; 
+}
+a:visited{
+	color: white; 
+}

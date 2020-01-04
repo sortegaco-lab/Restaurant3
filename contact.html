@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Name: Susana Ortega
+	 Date Created: 
+	 Most recent revision: 
+--> 
+
+<html lang="en"> 
+	<head>
+		<title> Contact Us </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+		<script type="text/JavaScript" src="scripts/restaurant.js"></script>
+ 
+		<style>
+			section{
+				display: grid; 
+				gird-template-columns: max-content max-content; 
+				grid-gap: 5px;
+				text-align: center;
+			}
+			.requiredInfo label{
+				font-weight: bold; 
+			}
+			section label{
+				text-align: center; 
+			}
+			
+			.txtarea-align textarea{
+				vertical-align: top;
+				height: 50px; 
+			}
+			.submitButton input{
+				background-color: #5b7d87;
+				color: #fef9ff;
+			}
+			.submitButton input:hover{
+				font-weight: bold; 
+			}
+		</style>
+	</head>
+	
+	<body> 
+		<noscript><h1> Site is best viewed with JavaScript enabled!</h1> </noscript>
+		<header> 
+			<h1> Sushi Kitchen - We're opening a new location! </h1>
+		</header>
+		
+		<nav>
+			<a class="btn" href="menu.html"> Menu </a>
+			<a class="btn" href="home.html"><i class="fa fa-home"></i> Home </a>
+			<a class="btn" href=""> Contact Us </a>
+		</nav>
+		<br />
+		<section>
+			<form name="contactForm" onsubmit="return validateItems();" action="" method="POST">
+			<div class="container">
+			<div class="requiredInfo">
+				<div class="form-group">
+					<label for="name"> Name: </label>
+					<input type="text" id="name" name="name" >
+				</div>
+				<div class="form-group">
+					<label for="email"> Email: </label>
+					<input type="text" id="email" name="email">
+				</div>
+				<div class="form-group">
+					<label for="phone"> Phone: </label>
+					<input type="text" id="phone" name="phone">
+				</div>
+			</div>
+				<div class="form-group">
+					<label for="inquiry"> Reason for Inquiry: </label>
+					<select id="inquiry" name="inquiry">
+						<option value="default" selected> Catering </option>
+						<option value="private"> Private Party </option>
+						<option value="feedback"> Feedback </option>
+						<option value="other"> Other </option> 
+					</select>
+				</div>
+				
+				<div class="txtarea-align">
+					<label id="additionalInfo" for="info"> Additional Information: </label>
+					<textarea id="info" name="info"></textarea><br /><br />
+				</div>
+				
+				<div class="form-group">
+					<label> Have you been to this restaurant? </label>
+					<input type="radio" id="choice1" name="returning" value="yes">
+					<label for="choice1"> Yes </label>
+					<input type="radio" id="choice2" name="returning" value="no">
+					<label for="choice2"> No </label>
+				</div>
+				
+				<label> Best days to contact you: </label>
+				<input type="checkbox" id="monday" name="contactDay" value="monday">
+				<label for="monday"> M </label>
+				<input type="checkbox" id="tuesday" name="contactDay" value="tuesay">
+				<label for="tuesday"> T </label>
+				<input type="checkbox" id="wednesday" name="contactDay" value="wednesday">
+				<label for="wednesday"> W </label>
+				<input type="checkbox" id="thursday" name="contactDay" value="thursday">
+				<label for="thursday"> Th </label>
+				<input type="checkbox" id="friday" name="contactDay" value="friday">
+				<label for="friday"> F </label><br />
+				
+				<div class="submitButton">
+				<input type="submit" class="btn" id="submit" value="Send Request"><br />
+				</div>
+			</div>	
+			</form>
+		</section>
+		
+		<footer>
+			<p> 1234 Fake Street, Fake City, Fake State, 12345 </p>
+			<p> 123-456-7891 </p>
+		</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
